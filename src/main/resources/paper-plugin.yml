@@ -1,5 +1,5 @@
 name: Anvil
-version: '0.0.1'
+version: '1.0.0'
 main: me.sytex.anvil.Anvil
-api-version: '1.19'
+api-version: '1.19.4'
 authors: [ SytexMC ]
