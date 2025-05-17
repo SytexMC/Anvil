@@ -1,0 +1,5 @@
+name: Anvil
+version: '0.0.1'
+main: me.sytex.anvil.Anvil
+api-version: '1.19'
+authors: [ SytexMC ]
