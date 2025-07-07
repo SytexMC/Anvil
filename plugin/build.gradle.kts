@@ -16,13 +16,13 @@ tasks {
     processResources { filteringCharset = Charsets.UTF_8.name() }
 
     runServer {
-        minecraftVersion("1.21.5")
+        minecraftVersion("1.19.4")
         jvmArgs("-Dcom.mojang.eula.agree=true")
     }
 }
 
 dependencies {
-    compileOnly("io.papermc.paper:paper-api:1.21.7-R0.1-SNAPSHOT")
+    compileOnly("io.papermc.paper:paper-api:1.19.4-R0.1-SNAPSHOT")
 }
 
 paper {
