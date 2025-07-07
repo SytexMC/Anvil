@@ -33,7 +33,7 @@ paper {
     foliaSupported = true
 
     name = "Anvil"
-    description = "Adds anvil repair and damage mechanics using iron ingots and obsidian respectively, with both crafting and right-click interaction support."
+    description = "Repair anvils with iron ingots or damage them with obsidian, via crafting or shift + right-click."
     version = project.version as String
 
     authors = listOf("Sytex")
