@@ -28,7 +28,7 @@ dependencies {
 paper {
     main = "me.sytex.anvil.Anvil"
 
-    apiVersion = "1.21"
+    apiVersion = "1.19"
 
     foliaSupported = true
 
