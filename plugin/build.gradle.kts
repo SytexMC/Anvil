@@ -26,16 +26,14 @@ dependencies {
 }
 
 paper {
-    main = "me.sytex.plugin.Plugin"
-    bootstrapper = "me.sytex.plugin.PluginBootstrap"
-    loader = "me.sytex.plugin.PluginLoader"
+    main = "me.sytex.anvil.Anvil"
 
     apiVersion = "1.21"
 
     foliaSupported = true
 
-    name = "Plugin"
-    description = "A Paper Plugin Template"
+    name = "Anvil"
+    description = "Adds anvil repair and damage mechanics using iron ingots and obsidian respectively, with both crafting and right-click interaction support."
     version = project.version as String
 
     authors = listOf("Sytex")
