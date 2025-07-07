@@ -1,5 +1,5 @@
 /*
- * This file is part of Plugin, licensed under GPL v3.
+ * This file is part of Anvil, licensed under GPL v3.
  *
  * Copyright (c) 2025 Sytex <sytex@duck.com>
  * Copyright (c) contributors
