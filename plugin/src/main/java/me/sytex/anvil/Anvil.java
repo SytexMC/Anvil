@@ -20,22 +20,34 @@
 
 package me.sytex.anvil;
 
+import java.util.Map;
+import me.sytex.anvil.listeners.PlayerInteractListener;
+import me.sytex.anvil.recipes.AnvilRecipes;
+import org.bukkit.Bukkit;
+import org.bukkit.Material;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Anvil extends JavaPlugin {
 
-  @Override
-  public void onLoad() {
+  public static final Material REPAIR_INGREDIENT = Material.IRON_INGOT;
+  public static final Material DAMAGE_INGREDIENT = Material.OBSIDIAN;
 
-  }
+  public static final Map<Material, Material> REPAIR_MAP = Map.of(
+      Material.DAMAGED_ANVIL, Material.CHIPPED_ANVIL,
+      Material.CHIPPED_ANVIL, Material.ANVIL,
+      Material.ANVIL, Material.ANVIL
+  );
+
+  public static final Map<Material, Material> DAMAGE_MAP = Map.of(
+      Material.ANVIL, Material.CHIPPED_ANVIL,
+      Material.CHIPPED_ANVIL, Material.DAMAGED_ANVIL,
+      Material.DAMAGED_ANVIL, Material.DAMAGED_ANVIL
+  );
 
   @Override
   public void onEnable() {
+    Bukkit.getPluginManager().registerEvents(new PlayerInteractListener(), this);
 
-  }
-
-  @Override
-  public void onDisable() {
-
+    AnvilRecipes.register(this);
   }
 }
