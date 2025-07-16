@@ -33,7 +33,7 @@ paper {
     foliaSupported = true
 
     name = "Anvil"
-    description = "Repair anvils with iron ingots or damage them with obsidian, via crafting or shift + right-click."
+    description = "Repair anvils with iron ingots or damage them with obsidian, via crafting or by shift + right-clicking them."
     version = project.version as String
 
     authors = listOf("Sytex")
